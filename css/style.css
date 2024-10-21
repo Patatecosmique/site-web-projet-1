@@ -1,25 +1,58 @@
 body {
     background-color: #041821;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
-.nom {
+
+header {
+    border-bottom: 1px solid;
+    font-size: 10pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.points {
     color: #1bd79e;
 }
 
-.logo {
+.logo span {
     color: #e5e5e5;
-    display: flex;
-    justify-content: space-between;
-    justify-content: flex-end; 
-    align-items: end;
+    margin: 0 10px;
 }
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+}
+
 .presentation {
     color: #e5e5e5;
+}
+
+.atout {
+    color: #1bd79e;
 }
 
 h3 {
     color: #e5e5e5;
 }
+
 .paragraphe {
     color: #808080;
-    text-align:left;
+    text-align: left;
+}
+
+/* ------------------- MEDIA QUERIES -------------------*/
+
+@media all and (max-width: 425px) {
+    header {
+        flex-direction: column;
+    }
 }
