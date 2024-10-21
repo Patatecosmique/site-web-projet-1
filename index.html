@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Police d'écriture NOM PRENOM -->
+    <!-- Lien pour relier le HTML au CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Police d'écriture NOM / PRENOM -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <linkhref="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <!-- Police d'écriture texte présentation -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +22,23 @@
 <body>
 
     <header>
-        <h2>Bastian Pitois<span class="point">.</span></h2>
+        <h2>Bastian Pitois<span>.</span></h2>
         <nav class="logo">
-            <span class="fa-brands fa-instagram"></span>
-            <span class="fa-brands fa-facebook"></span>
-            <span class="fa-brands fa-linkedin"></span>
-            <span class="fa-solid fa-circle-half-stroke"></span>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <span class="fa-brands fa-instagram"></span>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <span class="fa-brands fa-facebook"></span>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <span class="fa-brands fa-linkedin"></span>
+            </a>
+            <a href="#" target="_blank" aria-label="Dark Mode">
+                <span class="fa-solid fa-circle-half-stroke"></span>
+            </a>
         </nav>
     </header>
+
     <div class="presentation">
         <h1> Hello,<br>Je suis photographe d'art,<br><span class="atout">créatif & engagé</span></h1>
     </div>
@@ -38,33 +48,43 @@
         sequi eos, asperiores fugit quos nihil nobis in cumque, praesentium ea culpa velit magnam provident
         voluptatem deserunt.
     </p>
-    <nav class="menu">
-        <ul>
-            <a href="#Nature"></a>Nature
-            <a href="#Portrait"></a>Portrait
-            <a href="#Art"></a>Art
-            <a href="#Urbain"></a>Urbain
-            <a href="#Animaux"></a>Animaux
-        </ul>
+    <nav class="categories">
+        <div class="category">
+            <a href="#Nature">Nature</a>
+        </div>
+        <div class="category">
+            <a href="#Portrait">Portrait</a>
+        </div>
+        <div class="category">
+            <a href="#Art">Art</a>
+        </div>
+        <div class="category">
+            <a href="#Urbain">Urbain</a>
+        </div>
+        <div class="category">
+            <a href="#Animaux">Animaux</a>
+        </div>
     </nav>
 
     <main>
         <aside class="image">
-            <img src="https://picsum.photos/200/300?random=1" alt="">
-            <img src="https://picsum.photos/200/300?random=2" alt="">
-            <img src="https://picsum.photos/200/300?random=3" alt="">
-            <img src="https://picsum.photos/200/300?random=4" alt="">
-            <img src="https://picsum.photos/200/300?random=5" alt="">
-            <img src="https://picsum.photos/200/300?random=6" alt="">
-            <img src="https://picsum.photos/200/300?random=7" alt="">
-            <img src="https://picsum.photos/200/300?random=8" alt="">
-            <img src="https://picsum.photos/200/300?random=9" alt="">
-            <img src="https://picsum.photos/200/300?random=10" alt="">
-            <img src="https://picsum.photos/200/300?random=11" alt="">
-            <img src="https://picsum.photos/200/300?random=12" alt="">
-            <img src="https://picsum.photos/200/300?random=13" alt="">
-            <img src="https://picsum.photos/200/300?random=14" alt="">
-            <img src="https://picsum.photos/200/300?random=15" alt="">
+            <div class="conteneur-img">
+                <img src="https://picsum.photos/200/300?random=1" alt="">
+                <img src="https://picsum.photos/200/300?random=2" alt="">
+                <img src="https://picsum.photos/200/300?random=3" alt="">
+                <img src="https://picsum.photos/200/300?random=4" alt="">
+                <img src="https://picsum.photos/200/300?random=5" alt="">
+                <img src="https://picsum.photos/200/300?random=6" alt="">
+                <img src="https://picsum.photos/200/300?random=7" alt="">
+                <img src="https://picsum.photos/200/300?random=8" alt="">
+                <img src="https://picsum.photos/200/300?random=9" alt="">
+                <img src="https://picsum.photos/200/300?random=10" alt="">
+                <img src="https://picsum.photos/200/300?random=11" alt="">
+                <img src="https://picsum.photos/200/300?random=12" alt="">
+                <img src="https://picsum.photos/200/300?random=13" alt="">
+                <img src="https://picsum.photos/200/300?random=14" alt="">
+                <img src="https://picsum.photos/200/300?random=15" alt="">
+            </div>
         </aside>
     </main>
     <footer>

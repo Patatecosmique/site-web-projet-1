@@ -11,12 +11,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Yeseva One", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
-.points {
+h2 span {
     color: #1bd79e;
 }
 
@@ -28,32 +25,98 @@ header {
 h2 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 10px;
+    font-weight: 100;
     font-style: normal;
 }
 
 .presentation {
     color: #e5e5e5;
     margin: 0 150px;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .atout {
     color: #1bd79e;
 }
 
-h3 {
+h2 {
     color: #e5e5e5;
 }
 
 .paragraphe {
     color: #808080;
     text-align: left;
+    margin: 0 150px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: auto;
+}
+
+.category a {
+    display: flex;
+    padding: 10px 30px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e5e5e5;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+.category:hover {
+    background-color: #1bd79e;
+}
+
+.category:not(:hover) {
+    border-color: transparent;
+}
+/* ------------------- GESTION DES IMAGES -------------------*/
+main {
+    display: center;
+    justify-content: center;
+}
+.image {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+}
+.conteneur-img img {
+    width: 200px;
+    height: 200px;
+    
 }
 
 /* ------------------- MEDIA QUERIES -------------------*/
+
+@media all and (max-width: 1024px) {
+    .conteneur-img {
+        flex-direction: row; /* Organise les images en ligne */
+        justify-content: space-around; /* Espace autour des images */
+    }
+    .conteneur-img img {
+        flex: 1 1 200px; /* Flexibilité pour que chaque image prenne une part égale de l'espace disponible */
+        max-width: 23%; /* Maximum 4 images par ligne */
+    }
+}
+
+
+
 
 @media all and (max-width: 425px) {
     header {
         flex-direction: column;
     }
 }
+
