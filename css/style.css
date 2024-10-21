@@ -5,9 +5,10 @@ body {
     padding: 0;
 }
 
-header {
+header {    
     border-bottom: 1px solid;
     font-size: 10pt;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,34 +83,48 @@ h2 {
 .category:not(:hover) {
     border-color: transparent;
 }
-/* ------------------- GESTION DES IMAGES -------------------*/
-main {
-    display: center;
+footer h4 {
+    
+    color: #808080;
+    display: flex;
     justify-content: center;
 }
-.image {
+footer h6 {
+    color: #808080;
     display: flex;
-    justify-content: column;
+    justify-content: center;
+}
+/* ------------------- GESTION DES IMAGES -------------------*/
+aside{ 
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.conteneur-img img {
-    width: 200px;
-    height: 200px;
-    
+.conteneur-img {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    max-width: 1200px;
+    width: 100%;
+    gap: 10px;
 }
+
+.conteneur-img img {
+    width: 300px;
+    height: 300px;
+}
+
+
 
 /* ------------------- MEDIA QUERIES -------------------*/
 
-@media all and (max-width: 1024px) {
-    .conteneur-img {
-        flex-direction: row; /* Organise les images en ligne */
-        justify-content: space-around; /* Espace autour des images */
-    }
-    .conteneur-img img {
-        flex: 1 1 200px; /* Flexibilité pour que chaque image prenne une part égale de l'espace disponible */
-        max-width: 23%; /* Maximum 4 images par ligne */
+/* Media Query pour les écrans entre 1024px et 1440px */
+@media (max-width: 1440px) {
+    .image-container {
+        grid-template-columns: repeat(4, 0fr); /* 4 colonnes */
     }
 }
+
 
 
 
