@@ -1,0 +1,25 @@
+body {
+    background-color: #041821;
+}
+.nom {
+    color: #1bd79e;
+}
+
+.logo {
+    color: #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end; 
+    align-items: end;
+}
+.presentation {
+    color: #e5e5e5;
+}
+
+h3 {
+    color: #e5e5e5;
+}
+.paragraphe {
+    color: #808080;
+    text-align:left;
+}
