@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
 body {
     background-color: #041821;
     color: white;
@@ -21,10 +24,13 @@ header {
 }
 /* ----------------- NOM PRENOM ---------------- */
 h2 {
-    font-family: "Montserrat", sans-serif;
+    color: #e5e5e5;
+    font-family: "Yeseva One", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    padding: 20px;
+    margin: 10px;
 }
 
 h2 {
@@ -112,7 +118,7 @@ footer h6 {
         object-fit: cover; /* Pour que l'image couvre le carré sans déformation */
     }
 
-/* ------------------- MEDIA QUERIES ------------------- */
+
 
 /* ------------------- CATÉGORIES ------------------- */
 .categories {
@@ -123,7 +129,7 @@ footer h6 {
 }
 
 .category a {
-    padding: 10px 30px;
+    padding: 10px 15px;
     margin: 5px;
     text-transform: uppercase;
     text-decoration: none;
@@ -144,6 +150,24 @@ footer h6 {
     width: 100%;
     aspect-ratio: 1 / 1; /* Les images restent carrées */
     object-fit: cover;
+}
+/* ----------------------- APPEL POLICE ------------------ */
+@font-face {
+    
+    font-family: "Yeseva";
+    
+    src: 
+        url(../fonts/YesevaOne-Regular.ttf)
+
+}
+
+@font-face {
+    
+    font-family: "Montserrat";
+    
+    src: 
+        url(../fonts/Montserrat-Regular.ttf)
+
 }
 
 /* ------------------- MEDIA QUERIES ------------------- */
@@ -197,7 +221,8 @@ footer h6 {
     }
 
     .category a {
-        padding: 8px 5px; /* Reduce padding for category links */
+        padding: 8px 4px; 
+        font-size: 9px;
     }
 }
 
