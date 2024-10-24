@@ -165,3 +165,41 @@ footer h6 {
     }
 }
 
+/* Pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    /* Garder 9 images au total */
+    .conteneur-img {
+        grid-template-columns: repeat(3, 1fr); /* 3 images par ligne */
+        margin: 0 20px; /* Ajoute une marge de 20px de chaque côté */
+    }
+
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
+    }
+
+    .logo {
+        margin-top: 10px; 
+    }
+
+    .presentation {
+        margin: 0 20px; 
+    }
+
+    .paragraphe {
+        margin: 0 20px; 
+    }
+
+    .categories {
+        font-size: 9pt; 
+        margin: 10px 0; 
+    }
+
+    .category a {
+        padding: 8px 5px; /* Reduce padding for category links */
+    }
+}
+
+
+
