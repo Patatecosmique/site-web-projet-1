@@ -31,5 +31,6 @@ git clone https://github.com/Patatecosmique/site-web-projet-1.git
 ---
 ## Remarques
 - Erreur de commit correction : media-queries-tablette qui aurait du être appliqués sur le répertoire style.css au lieu d'index.html.
+- Validation W3C de l'HTML et CSS validé.
 - Ce projet ne nécessite aucun serveur ou base de données. L'ensemble du site fonctionne en HTML et CSS, en utilisant des bibliothèques et des services gratuits pour les ressources multimédias.
 Pour toute modification du style, consultez le fichier CSS associé au projet.
